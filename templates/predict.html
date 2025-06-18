@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Predict</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            height: 70px;
+            background-color: #ab73c9dd;
+            margin-top: 5px;
+            text-align: right;
+            position: static;
+        }
+
+        span {
+            background-color: #e9eef0;
+            font-weight: 100;
+            font-size: 30px;
+            opacity: 0.7;
+            padding: 10px;
+            transition: 0.5s;
+        }
+
+        #last {
+            margin-right: 0.2em;
+        }
+
+        span:hover {
+            background-color: #a573c9dd;
+            border: 0px;
+        }
+
+        .parallax {
+            background-image: url("trial.jpeg");
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main {
+            background-color: #dbc5e8;
+            font-size: 20px;
+            font-weight: 100;
+            padding: 2em;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        footer {
+            height: 55px;
+            background-color: #a773c9dd;
+            font-size: 15px;
+            padding: 1em;
+            text-align: center;
+            position: static;
+        }
+
+        a:link,
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2d2d2e;
+        }
+
+        #select {
+            font-weight: 800;
+            border: 2px solid black;
+        }
+
+        .highlight {
+            background-color: #f1f1f1;
+            padding: 1em;
+            margin-top: 1em;
+            border-left: 5px solid #8b5fbf;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <br>
+        <span><a href="home.html">Home</a></span>
+        <span><a href="about.html">About</a></span>
+        <span><a href="survey.html">Survey</a></span>
+        <span><a href="quiz.html">Quiz</a></span>
+        <span id="select"><a href="predict.html">Predict</a></span>
+    </header>
+
+    <div class="parallax"></div>
+
+    <div class="main">
+        <h2>Dyslexia Prediction Results</h2>
+        <p>Our model predicts dyslexia likelihood based on survey and quiz data.</p>
+        <ul>
+            <li><b>0</b> --> Low chance of dyslexia</li>
+            <li><b>1</b> -->Moderate chance of dyslexia</li>
+            <li><b>2</b> --> High chance of dyslexia</li>
+        </ul>
+
+        <h3>Run the Prediction Model on Google Colab</h3>
+        <p>Follow these steps to run the model in Google Colab:</p>
+        <div class="highlight">
+            <ol>
+                <li>Go to <a href="https://colab.research.google.com/" style="text-decoration: underline;">Google Colab</a></li>
+                <li>Upload the project Python notebook file (e.g., <code>prediction.ipynb</code>)</li>
+                <li>Download and upload the dataset: download <b>labeled_dysx.csv</b> present in data folder</li>
+                </ul>
+                <li>Ensure the dataset is in the same folder as the notebook in Colab</li>
+                <li>Run all the cells and enter your survey + quiz values when prompted</li>
+                <li>Check the printed result </li>
+            </ol>
+        </div>
+
+        <br>
+        <p><b>Note:</b> The model is based on a Random Forest Classifier trained on combined quiz and survey results.</p>
+    </div>
+
+    <footer>
+        &copy; 2025 Dyslexia Detector | All Rights Reserved
+    </footer>
+</body>
+
+</html>
