@@ -12,7 +12,7 @@ The pipeline includes:
 
 ## 🚀 How to Use
 
-1. **Complete the Survey and Quiz** on the website.
+1. **Complete the Survey and Quiz** on the website present in templates.
 2. Scores will be calculated automatically and shown in an alert.
 3. On the **Predict** page, you’ll find:
    - A step-by-step guide to run the prediction notebook.
